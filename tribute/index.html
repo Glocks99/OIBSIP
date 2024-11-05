@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="hero">
+        <h1>Jarad Anthony Higgins</h1>
+        <p>(December 2, 1998 – December 8, 2019)</p>
+        <p>as "Juice WRLD"</p>
+        <div class="stat">&#9654;</div>
+      </div>
+      <video src="./vid.mp4" autoplay="true" loop="infinite"></video>
+    </section>
+    <section>
+      <h1>Biography</h1>
+      <p>
+        Jarad Anthony Higgins, better known as Juice WRLD, was an American
+        rapper, singer, and songwriter who captivated fans worldwide with his
+        raw, emotional lyrics and genre-blending music. Raised in Chicago, Juice
+        WRLD was influenced by rock, pop-punk, and hip-hop, creating a unique
+        sound that pushed the boundaries of rap music. He first gained
+        mainstream attention in 2018 with his breakthrough single "Lucid
+        Dreams," a melodic, introspective song that explored heartbreak and
+        mental health, themes that resonated deeply with his generation. Growing
+        up, Juice WRLD faced challenges, including battling anxiety and
+        addiction, which he openly addressed in his music. His honesty,
+        vulnerability, and distinct voice helped him quickly rise in the
+        industry, with hits like "All Girls Are the Same," "Robbery," and
+        "Legends." His music became a source of comfort for many, as he
+        addressed issues of love, loss, and personal struggles with a level of
+        openness and empathy that made him relatable to millions. Despite his
+        tragically short career, Juice WRLD released two studio albums during
+        his lifetime: *Goodbye & Good Riddance* (2018) and *Death Race for Love*
+        (2019), both of which were critically acclaimed. He also collaborated
+        with artists like Travis Scott, Halsey, and Young Thug, further
+        showcasing his versatility and creative range. After his passing, his
+        music continued to inspire, with posthumous releases like *Legends Never
+        Die* (2020) and *Fighting Demons* (2021) celebrating his legacy and his
+        message. Juice WRLD's impact extended beyond music; he became a voice
+        for young people dealing with mental health issues, encouraging his fans
+        to seek help and be open about their emotions. His legacy lives on as
+        one of the most influential artists of his generation, remembered for
+        his heartfelt lyrics, distinctive sound, and the deep connection he
+        fostered with his fans. Through his music, Juice WRLD's spirit continues
+        to resonate, reminding us of the power of vulnerability and the
+        importance of speaking openly about mental health.
+      </p>
+    </section>
+    <section>
+      <div class="imgCont">
+        <img src="./pic2.jpg" alt="" />
+      </div>
+
+      <div class="quote">
+        "Everybody’s got pain, but it’s just a different kind. Smile through the
+        pain and keep pushing. Your only limit is you."
+      </div>
+    </section>
+
+    <script>
+      const video = document.querySelector("video");
+      document.querySelector(".stat").addEventListener("click", (e) => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    </script>
+  </body>
+</html>
