@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg,rgb(30, 30, 133) , rgb(79, 79, 223));
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+body > div:nth-child(1){
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-shadow: 3px 3px 2px rgb(79, 79, 223);
+}
+.containers {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 0 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.4);
+}
+
+#title {
+    padding-left: 5px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+textarea {
+    padding: 5px;
+    height: 200px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+form button{
+    background-color: rgb(54, 114, 52);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+table {
+    flex: 1;
+    border-collapse: collapse;
+    border-spacing: 10px;
+}
+thead {
+    height: 40px;
+    color: #fff;
+    font-family: sans-serif;
+    border-bottom: 1px solid #fff;
+}
+th{
+    text-align: start;
+}
+
+td {
+    padding: 10px 2px;
+}
+.completed {
+    background-color: rgb(147, 241, 147);
+}
+.completed span {
+    font-size: 13px;
+}
+tr {
+    border-radius: 10px;
+}
+td {
+    background-color: #fff;
+}
+tr td:nth-last-child(1){
+    display: flex;
+    gap: 10px;
+}
+table button {
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+table button:nth-child(1){
+    background-color: red;
+}
+table button:nth-child(2){
+    background-color: rgb(173, 173, 212);
+}
+table button:nth-child(3){
+    background-color: rgb(147, 241, 147);
+}
+.completed td{
+    background-color: rgb(147, 241, 147);
+    color: #fff;
+}
+.update {
+    display: none;
+    width: 100%;
+    padding-left: 5px;
+}
+.update button{
+    background-color: green;
+    width: 100px;
+}
+.isupdating .update{
+    display: flex;
+    gap: 10px;
+}
+
+.isupdating .desc {
+    display: none;
+}

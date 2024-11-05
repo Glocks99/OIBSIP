@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>Todo List web app</div>
+
+    <div class="containers">
+      <form id="frm">
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+          required
+        />
+        <textarea name="" id="desc" placeholder="Description"></textarea>
+        <button>save</button>
+      </form>
+
+      <!-- table -->
+      <table>
+        <thead>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </thead>
+
+        <tbody>
+          <!-- <tr class="completed">
+            <td>title</td>
+            <td>short Description</td>
+            <td>
+              <button class="del">x</button>
+              <p>completed &CenterDot; <span>12:23 pm</span></p>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
